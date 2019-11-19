@@ -5,17 +5,17 @@
 }
 body {
   width: 100%;
-  /* height: 100vh; */
-  background-image: url(https://img.freepik.com/foto-gratuito/priorita-bassa-della-tabella-e-della-struttura-di-legno_1627-4021.jpg?size=626&ext=jpg);
-  /* padding:-10px; */
-}
+  background-image: url(../img/natural-pattern.png);
+  padding: 10px;
+  font-family: 'Raleway', sans-serif;
+  }
 .big-container {
-  width: 70%
+  width: 80%
   margin:auto;
 }
 .container-heading {
   width: 100%;
-  height: 50vh;
+  height: 400px;
   margin: 10px 10px;
   background-image: url(https://live.staticflickr.com/2882/10997161063_38ccbded87_b.jpg);
   background-position: center;
@@ -30,17 +30,19 @@ body {
   left:50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 25px;
+  /* font-size: 10px; */
   text-shadow: 2px 2px 4px black;
 }
-.title-1 {
+.logo .title-1 {
   text-align: center;
-  border-style: 10px groove white;
+  border-style: 5px groove white;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 nav {
-  background-color: grey;
+  background-color: rgb(41, 38, 37);
   width: 100%;
-  height: 10vh;
+  height: 60px;
   margin-top: 0;
 }
 ul.menu {
@@ -51,18 +53,19 @@ ul.menu {
 ul.menu a {
 text-decoration: none;
 color: white;
-font-size: 20px;
+font-size: 15px;
+text-transform: uppercase;
 }
 ul.menu li {
   display: inline-block;
   margin: 0 10px;
 }
 ul.menu li:hover {
-  background-color: lightgrey;
+  background-color: rgb(83, 83, 75);
 }
 main {
   width: 100%;
-  background-color: orange;
+  /* background-color: orange; */
 }
 main::after{
   content: "";
@@ -74,54 +77,95 @@ main::after{
   margin: 0 10px;
 
 }
+.menu-list-style {
+  list-style: none;
+}
+.menu-list-style li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.menu-list-style li a {
+  text-decoration: none;
+  color:green;
+}
+.menu-list-style li a:hover {
+  text-decoration: underline;
+}
 .col-left {
   width: 20%;
-  background-color: blue;
+  background-color: white;
   margin-top: 10px;
-  padding: 0 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.col-left-header {
+  margin-bottom: 10px;
+}
+.col-left-header::after {
+  content:"";
+  display:table;
+  clear:both;
+}
+.col-left-header i,
+.col-left-header h3 {
+  float:left;
+}
+.col-center .title-central {
+  margin-bottom: 20px;
+  font-weight: 400;
+  color:#000;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 3px #000;
+}
+.col.center p {
+  font-size: 15px;
+  line-height: 20px;
 }
 .col-center {
-  width: 40%;
-  background-color: green;
+  width: 50%;
+  background-color: white;
   margin-top: 10px;
-  padding:0 10px;
+  padding: 5px;
+  margin: :0 5px;
+  border-radius: 5px;
 }
 .col-right {
   width: 20%;
-  background-color: purple;
+  background-color: white;
   margin-top: 10px;
   padding:0 10px;
 }
 .mod1, .mod2, .mod3 {
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   padding: 25px;
   background-color: white;
   border-radius: 3px;
 }
 footer {
   width: 100%;
-  height: 200px;
-  padding: 10px 0 0 0;
+  height: 100px;
+  padding: 5px;
+  margin-top: 10px;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 5px;
   background-color: lightgrey;
-  color: rgb(180, 180, 180);
+  /* color: rgb(180, 180, 180); */
 }
-.icons {
+footer .footer-top {
+  font-style: italic;
+  text-align: center;
+  border-bottom: 2px inset grey;
+}
+footer .footer.bottom::after {
+  content: "";
+  display: table;
+  clear:both;
+}
+footer .footer.bottom .footer-col {
+  float: left;
+  width: calc(100%/3);
+  text-align: center;
+  padding: 20px;
   font-size: 30px;
 }
-.author {
-  border-bottom: 1px solid rgb(180, 180, 180);
-  padding: 20px;
-  margin-bottom: 20px;
-}
-.icons i {
-  display: inline-block;
-  margin: 0 100px;
-/*
- */
-/* .contaner-footer {
-  width: 100px;
-
-} */
